@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace NestedObjects
 {
-    /// <summary>
-    /// This class represents a student advisor
-    /// </summary>
-    class Advisor
+    class Student
     {
-
         /// <summary>
-        /// Property: First and Last name of advisor
+        /// Property: First and last name of student
         /// </summary>
         public string FullName { get; set; }
 
         /// <summary>
-        /// Property: Email address of advisor
+        /// Date of birth of student
         /// </summary>
-        public string Email { get; set; }
+        public DateTime DateofBirth { get; set; }
 
-        
+        public Advisor AssignedAdvisor { get; set; }
+
+
     }
 }
