@@ -9,6 +9,14 @@ namespace NestedObjects
     class Student
     {
         /// <summary>
+        /// Constructor that sets default advisor
+        /// </summary>
+        public Student()
+        {
+            AssignedAdvisor = new Advisor();
+        }
+        
+        /// <summary>
         /// Property: First and last name of student
         /// </summary>
         public string FullName { get; set; }
